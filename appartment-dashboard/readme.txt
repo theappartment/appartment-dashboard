@@ -2,7 +2,7 @@
 Contributors: appartment
 Requires at least: 6.2
 Requires PHP: 7.4
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPL-2.0-or-later
 
 Bacheca WordPress essenziale con contatti app[art]ment.
