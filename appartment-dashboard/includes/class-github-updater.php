@@ -11,6 +11,16 @@ final class Appartment_GitHub_Updater {
 		$this->plugin_file = plugin_basename( $plugin_file );
 		add_filter( 'update_plugins_github.com', array( $this, 'update' ), 10, 4 );
 		add_action( 'delete_site_transient_update_plugins', array( $this, 'clear_cache' ) );
+		// Before WordPress's priority-10 plugin check, invalidate both caches.
+		add_action( 'load-update-core.php', array( $this, 'prepare_manual_check' ), 0 );
+	}
+
+	public function prepare_manual_check() {
+		if ( empty( $_GET['force-check'] ) || ! current_user_can( 'update_plugins' ) ) {
+			return;
+		}
+		$this->clear_cache();
+		delete_site_transient( 'update_plugins' );
 	}
 
 	public function clear_cache() {

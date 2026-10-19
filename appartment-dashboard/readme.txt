@@ -2,7 +2,7 @@
 Contributors: appartment
 Requires at least: 6.2
 Requires PHP: 7.4
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPL-2.0-or-later
 
 Bacheca WordPress essenziale con contatti app[art]ment.
@@ -31,6 +31,10 @@ Verificati sintassi PHP e scenari di selezione widget con un ambiente simulato. 
 == Aggiornamenti GitHub ==
 Dalla versione 1.1.0 gli aggiornamenti provengono dalle release pubbliche di https://github.com/theappartment/appartment-dashboard.
 Installare manualmente questa versione una volta per abilitare il sistema. Le successive saranno proposte nella schermata aggiornamenti di WordPress; gli aggiornamenti automatici restano una scelta dell'amministratore.
-Il controllo segue la pianificazione di WordPress e usa una cache di 6 ore (15 minuti in caso di errore). Il comando WordPress per verificare nuovamente gli aggiornamenti svuota anche questa cache.
+Il controllo segue la pianificazione di WordPress e usa una cache di 6 ore (15 minuti in caso di errore). Dalla versione 1.1.2, il pulsante Verifica di nuovo svuota la cache GitHub e quella degli aggiornamenti plugin prima del controllo WordPress.
 Vengono considerate solo release stabili con tag vX.Y.Z o X.Y.Z e allegato appartment-dashboard.zip. Il codice sorgente ZIP generato automaticamente da GitHub non viene utilizzato.
 Il plugin contatta api.github.com per le release e github.com per scaricare gli aggiornamenti; non invia credenziali o dati di analisi del sito.
+
+== Changelog ==
+= 1.1.2 =
+Corregge Verifica di nuovo: le versioni 1.1.0 e 1.1.1 potevano riutilizzare la cache GitHub per 6 ore anche durante la verifica manuale. Installare manualmente 1.1.2 per applicare subito la correzione oppure attendere il normale controllo dopo la scadenza della cache.
