@@ -2,7 +2,7 @@
 Contributors: appartment
 Requires at least: 6.2
 Requires PHP: 7.4
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 License: GPL-2.0-or-later
 
 Bacheca WordPress essenziale con contatti app[art]ment.
@@ -36,5 +36,8 @@ Vengono considerate solo release stabili con tag vX.Y.Z o X.Y.Z e allegato appar
 Il plugin contatta api.github.com per le release e github.com per scaricare gli aggiornamenti; non invia credenziali o dati di analisi del sito.
 
 == Changelog ==
+= 1.1.3 =
+Release senza modifiche funzionali per verificare il rilevamento e l’installazione degli aggiornamenti GitHub dalla versione 1.1.2.
+
 = 1.1.2 =
 Corregge Verifica di nuovo: le versioni 1.1.0 e 1.1.1 potevano riutilizzare la cache GitHub per 6 ore anche durante la verifica manuale. Installare manualmente 1.1.2 per applicare subito la correzione oppure attendere il normale controllo dopo la scadenza della cache.

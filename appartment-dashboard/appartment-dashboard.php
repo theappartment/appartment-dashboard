@@ -2,7 +2,7 @@
 /**
  * Plugin Name: app[art]ment Dashboard
  * Description: Bacheca essenziale con contatti app[art]ment e riepiloghi nativi Site Kit e WooCommerce.
- * Version: 1.1.2
+ * Version: 1.1.3
  * Update URI: https://github.com/theappartment/appartment-dashboard
  * Author: app[art]ment
  * Requires at least: 6.2
@@ -80,7 +80,7 @@ final class Appartment_Dashboard {
 
 	public static function assets( $hook ) {
 		if ( 'index.php' === $hook && self::is_dashboard() ) {
-			wp_enqueue_style( 'appartment-dashboard', plugins_url( 'assets/dashboard.css', __FILE__ ), array(), '1.1.2' );
+			wp_enqueue_style( 'appartment-dashboard', plugins_url( 'assets/dashboard.css', __FILE__ ), array(), '1.1.3' );
 		}
 	}
 
