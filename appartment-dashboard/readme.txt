@@ -2,7 +2,7 @@
 Contributors: appartment
 Requires at least: 6.2
 Requires PHP: 7.4
-Stable tag: 1.1.3
+Stable tag: 1.2.0
 License: GPL-2.0-or-later
 
 Bacheca WordPress essenziale con contatti app[art]ment.
@@ -16,7 +16,7 @@ Mostra esclusivamente il riquadro powered by e, quando disponibili:
 - Il riepilogo originale Site Kit, con setup completato e accesso autenticato o condiviso autorizzato da Site Kit.
 - Il riepilogo originale Stato WooCommerce per gli utenti autorizzati. Vendite, ordini e scorte dipendono dalle funzioni e dai permessi WooCommerce.
 
-Gli altri widget e il pannello di benvenuto standard vengono rimossi dalla bacheca durante la richiesta. Non vengono cancellate impostazioni o dati. Le notifiche amministrative restano visibili.
+Gli altri widget e il pannello di benvenuto standard vengono rimossi dalla bacheca durante la richiesta. Non vengono cancellate impostazioni o dati. Gli avvisi amministrativi standard vengono raccolti nel Centro notifiche.
 I widget consentiti vengono mostrati anche se precedentemente nascosti nelle Impostazioni schermata; possono ancora essere ridotti e spostati.
 Il plugin non attiva o configura Site Kit e WooCommerce e non forza widget che questi plugin non registrano (per esempio se WooCommerce Admin è disabilitato).
 La bacheca amministrativa di rete multisito non viene modificata.
@@ -35,7 +35,16 @@ Il controllo segue la pianificazione di WordPress e usa una cache di 6 ore (15 m
 Vengono considerate solo release stabili con tag vX.Y.Z o X.Y.Z e allegato appartment-dashboard.zip. Il codice sorgente ZIP generato automaticamente da GitHub non viene utilizzato.
 Il plugin contatta api.github.com per le release e github.com per scaricare gli aggiornamenti; non invia credenziali o dati di analisi del sito.
 
+== Centro notifiche ==
+Dalla 1.2.0 gli avvisi amministrativi standard sono nascosti per impostazione predefinita. Aprire Notifiche nella barra superiore o il pulsante fisso in basso per consultare quelli della schermata corrente e usare le azioni originali. Il pulsante Mostra avvisi nelle pagine disattiva il nascondimento; la preferenza è locale al browser, separata per utente e sito.
+La pagina Notifiche nel menu mostra lo storico con ricerca, filtro per tipo e cancellazione del proprio archivio. Vengono raccolti gli avvisi delle pagine visitate, anche quelli aggiunti dinamicamente; non è possibile recuperare retroattivamente avvisi mai visualizzati o già eliminati da altri plugin.
+Lo storico contiene solo testo, tipo, pagina di origine e data; è separato per utente, sito e contesto amministrativo. Massimo 100 voci, finestra visibile di 30 giorni; le voci scadute vengono rimosse al successivo salvataggio. Nessun dato viene inviato a servizi esterni. Tornare alla pagina di origine per verificare se un avviso è ancora attuale ed eseguire azioni.
+Le validazioni nei moduli, i messaggi inline, le notifiche interne del block editor e i banner con markup non standard non vengono spostati. La funzione richiede JavaScript; se disabilitato gli avvisi restano visibili normalmente. Non sopprime le callback degli altri plugin e non cancella i loro avvisi.
+
 == Changelog ==
+= 1.2.0 =
+Aggiunge nascondimento degli avvisi standard, pannello della schermata corrente con contatore e azioni originali, storico personale con ricerca, filtri e cancellazione. Supporta avvisi dinamici e contesti sito, rete e utente.
+
 = 1.1.3 =
 Release senza modifiche funzionali per verificare il rilevamento e l’installazione degli aggiornamenti GitHub dalla versione 1.1.2.
 

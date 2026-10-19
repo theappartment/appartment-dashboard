@@ -1,0 +1,22 @@
+html.appartment-hide-notices .appartment-managed-notice { display: none !important; }
+#appartment-notice-panel .appartment-managed-notice { display: block !important; margin: 16px 0; }
+#appartment-notice-panel[hidden], #appartment-notice-overlay[hidden], .appartment-archive-item[hidden] { display: none !important; }
+#appartment-notice-overlay { position: fixed; inset: 0; background: #10151780; z-index: 100001; }
+#appartment-notice-panel { box-sizing: border-box; position: fixed; z-index: 100002; inset: 32px 0 0 auto; width: min(620px, 100%); padding: 24px; overflow-y: auto; background: #f6f7f7; color: #1d2327; box-shadow: -8px 0 40px #0002; }
+#appartment-notice-panel header { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+#appartment-notice-panel h2 { margin: 0; font-size: 20px; line-height: 1.4; }
+#appartment-notice-panel p { font-size: 13px; line-height: 1.65; }
+.appartment-notice-count { display: inline-block; min-width: 18px; padding: 0 5px; border-radius: 12px; background: #e8edf2; color: #1d2327; text-align: center; font-size: 12px; }
+#appartment-notice-launcher { position: fixed; bottom: 20px; right: 24px; z-index: 9999; box-shadow: 0 2px 12px #0002; }
+.appartment-notice-open { overflow: hidden; }
+.appartment-notice-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin: 24px 0; }
+.appartment-notice-tools form { margin: 0; }
+.appartment-notice-tools label { display: flex; align-items: center; gap: 8px; }
+.appartment-notice-archive { max-width: 1080px; }
+.appartment-archive-item { background: #fff; border: 1px solid #dcdcde; border-left: 4px solid #72aee6; padding: 20px; margin: 16px 0; }
+.appartment-type-error { border-left-color: #d63638; }
+.appartment-type-warning { border-left-color: #dba617; }
+.appartment-type-success { border-left-color: #00a32a; }
+.appartment-archive-text { white-space: pre-wrap; overflow-wrap: anywhere; }
+.appartment-archive-item footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; color: #646970; font-size: 12px; }
+@media (max-width: 782px) { #appartment-notice-panel { top: 46px; padding: 20px; } #appartment-notice-launcher { right: 12px; bottom: 12px; } }
