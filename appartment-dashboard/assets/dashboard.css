@@ -1,0 +1,48 @@
+#appartment_dashboard_contact .inside {
+	margin: 0;
+	padding: 0;
+}
+
+.appartment-contact {
+	box-sizing: border-box;
+	min-height: 400px;
+	padding: 20px 16px 36px;
+	color: #3c434a;
+}
+
+.appartment-logo {
+	display: block;
+	width: 100%;
+	max-width: 617px;
+	height: auto;
+}
+
+.appartment-contact-details {
+	margin-top: 64px;
+}
+
+.appartment-contact-details p {
+	margin: 0 0 18px;
+	font-size: 14px;
+	line-height: 1.65;
+	overflow-wrap: anywhere;
+}
+
+.appartment-contact-details a:not(.appartment-phone) {
+	text-decoration: underline;
+}
+
+.appartment-contact-details .appartment-phone {
+	color: inherit;
+	text-decoration: none;
+}
+
+.appartment-contact a:focus-visible {
+	outline: 2px solid #2271b1;
+	outline-offset: 3px;
+}
+
+/* Remove only the empty WordPress welcome wrapper; admin notices stay visible. */
+body.index-php #welcome-panel:empty {
+	display: none;
+}
